@@ -1,0 +1,5 @@
+Transformers are a modern neural network architecture widely used in natural language processing. Unlike traditional sequence models such as recurrent neural networks, transformers rely on an attention mechanism to process entire sequences of text simultaneously. This allows transformers to capture long-range dependencies between words more effectively.
+
+The core component of the transformer architecture is the self-attention mechanism. Self-attention allows the model to weigh the importance of different words in a sentence when generating representations for each word. For example, when processing the sentence "The animal didn't cross the street because it was tired," the model can determine that the word "it" refers to "animal" by analyzing relationships between words.
+
+Transformers are used in many state-of-the-art NLP models such as BERT, GPT, and T5. These models are trained on massive text datasets and can perform a wide range of language tasks including translation, summarization, and question answering. Transformer-based models have significantly improved the performance of NLP systems.

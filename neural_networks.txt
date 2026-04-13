@@ -1,0 +1,5 @@
+Neural networks are computational models inspired by the structure and function of the human brain. They consist of interconnected nodes called neurons that process information. Each neuron receives input signals, performs a weighted sum of those inputs, and passes the result through an activation function. The output of one layer becomes the input to the next layer, allowing the network to learn complex patterns.
+
+A basic neural network consists of three types of layers: the input layer, hidden layers, and the output layer. The input layer receives raw data, the hidden layers process the data, and the output layer produces predictions. The number of hidden layers and neurons determines the capacity of the model to learn complex relationships in the data.
+
+Neural networks are trained using a process called backpropagation. During training, the network makes predictions and compares them with the actual target values. The difference between predicted and actual values is called the error. This error is propagated backward through the network to update the weights using gradient descent. Over many iterations, the network gradually improves its predictions.

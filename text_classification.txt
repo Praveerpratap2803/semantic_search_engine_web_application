@@ -1,0 +1,5 @@
+Text classification is one of the most common tasks in natural language processing. It involves assigning predefined categories to text documents. Examples of text classification include spam detection, sentiment analysis, topic categorization, and intent recognition in chatbots. The goal of text classification is to automatically analyze large volumes of text and organize them into meaningful groups.
+
+Traditional text classification approaches relied on feature extraction techniques such as bag-of-words and TF-IDF representations. These methods convert text into numerical vectors that can be used by machine learning algorithms. Algorithms such as Naive Bayes, logistic regression, and support vector machines were commonly used for classification tasks.
+
+In recent years, deep learning approaches have significantly improved text classification performance. Neural network architectures such as convolutional neural networks and transformers can capture contextual information and semantic relationships between words. These models learn representations of text that are more expressive than traditional feature engineering methods.
