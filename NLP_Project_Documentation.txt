@@ -1,0 +1,210 @@
+Project Name - End-to-End Semantic Document Search Engine Using NLP
+
+Research Paper
+
+https://www.researchgate.net/publication/394940360_Semantic_Search_for_Information_Retrieval
+
+
+https://www.youtube.com/watch?v=CK0ExcCWDP4
+
+
+---youtube link for learngin 
+https://www.youtube.com/watch?v=vHJPaNBdOyA
+
+
+https://www.youtube.com/watch?v=lLp5ZNBhZkA&list=PLTDARY42LDV67aWThoZxflLYGnD3Rh3VG&index=11
+
+https://www.youtube.com/watch?v=hQwFeIupNP0&list=PLeo1K3hjS3uu7CxAacxVndI4bE_o3BDtO&index=41
+
+
+
+
+Document Upload
+      ↓
+Text Preprocessing
+	- Text Cleaning
+	- Sentence Segmentation
+	- Tokenization
+	- Lowercasing
+	- Punctuation Removal
+	- Stopword Removal
+	- Stemming (Porter)
+      ↓
+Word Embedding Training (Comparing all these technique then using that technique forward)
+	- One-Hot
+	- Word2Vec CBOW
+	- Word2Vec Skip-Gram
+{
+1)One-Hot Encoding
+2)Word2Vec
+	CBOW
+	Skip-Gram
+3)GloVe
+4)FastText
+5)Transformer Embeddings
+	BERT
+	RoBERTa
+	MiniLM
+}
+      ↓
+Paragraph Vector Creation
+      ↓
+Query Vector Generation
+      ↓
+Cosine Similarity
+      ↓
+Result Ranking
+      ↓
+Performance Comparison
+
+
+
+cmd to activate env -> venv\Scripts\activate
+cmd to deactivate env -> deactivate
+
+create requirements.txt file -> touch requirements.txt
+install all dependencies from requirements.txt -> pip install -r requirements.txt
+
+
+
+For Resume Project
+
+┌─────────────────────────────────────────────────────────────┐
+│                    DOCUMENT UPLOAD                          │
+│              (PDF, TXT, DOCX support)                       │
+└──────────────────────┬──────────────────────────────────────┘
+                       ↓
+┌─────────────────────────────────────────────────────────────┐
+│                 TEXT PREPROCESSING                          │
+│  • Extraction  • Cleaning  • Tokenization                   │
+│  • Lowercasing • Stopword Removal                           │
+│  • Stemming/Lemmatization                                   │
+└──────────────────────┬──────────────────────────────────────┘
+                       ↓
+┌─────────────────────────────────────────────────────────────┐
+│              EMBEDDING GENERATION                           │
+│                                                             │
+│  Track 1: Word Embeddings + Aggregation                    │
+│    • Word2Vec (CBOW/Skip-gram) → Mean Pooling              │
+│    • GloVe → TF-IDF Weighted                               │
+│    • FastText → Mean Pooling                               │
+│                                                             │
+│  Track 2: Document Embeddings                              │
+│    • Doc2Vec (PV-DM/PV-DBOW)                               │
+│                                                             │
+│  Track 3: Transformer Embeddings                           │
+│    • Sentence-BERT (all-MiniLM-L6-v2)                      │
+│    • MiniLM                                                 │
+│    • RoBERTa (optional)                                     │
+└──────────────────────┬──────────────────────────────────────┘
+                       ↓
+┌─────────────────────────────────────────────────────────────┐
+│              VECTOR INDEX CREATION                          │
+│        (Store document vectors for fast retrieval)         │
+└──────────────────────┬──────────────────────────────────────┘
+                       ↓
+┌─────────────────────────────────────────────────────────────┐
+│              QUERY PROCESSING                               │
+│  • Apply same preprocessing as documents                   │
+│  • Generate query vector using same embedding model        │
+└──────────────────────┬──────────────────────────────────────┘
+                       ↓
+┌─────────────────────────────────────────────────────────────┐
+│              SIMILARITY COMPUTATION                         │
+│  • Cosine Similarity (primary)                             │
+│  • Euclidean Distance (comparison)                         │
+└──────────────────────┬──────────────────────────────────────┘
+                       ↓
+┌─────────────────────────────────────────────────────────────┐
+│              RANKING & RETRIEVAL                            │
+│  • Sort by similarity score                                │
+│  • Return Top-K documents                                  │
+└──────────────────────┬──────────────────────────────────────┘
+                       ↓
+┌─────────────────────────────────────────────────────────────┐
+│           PERFORMANCE EVALUATION                            │
+│  • Accuracy: P@K, R@K, MAP                                 │
+│  • Speed: Query time, indexing time                        │
+│  • Quality: Semantic relevance testing                     │
+│  • Comparative analysis across all models                  │
+└─────────────────────────────────────────────────────────────┘
+
+
+
+semantic_search_engine/
+├── preprocessing/
+│   ├── __init__.py
+│   ├── porter_stemmer.py    # Porter Stemming Algorithm
+│   └── preprocessor.py       # Text preprocessing pipeline
+├── embeddings/
+│   ├── __init__.py
+│   ├── one_hot.py           # One-Hot Encoding
+│   ├── word2vec_cbow.py     # Word2Vec CBOW
+│   └── word2vec_skipgram.py # Word2Vec Skip-gram
+├── vectorization/
+│   ├── __init__.py
+│   └── paragraph_vector.py  # Document vectorization
+├── search/
+│   ├── __init__.py
+│   ├── similarity.py        # Cosine similarity
+│   └── ranker.py           # Result ranking
+├── evaluation/
+│   ├── __init__.py
+│   └── metrics.py          # Performance metrics
+├── utils/
+│   ├── __init__.py
+│   └── helpers.py          # Utility functions
+├── data/
+│   └── documents/          # Your .txt files
+└── models/                 # Saved models
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
